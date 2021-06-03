@@ -1,0 +1,10 @@
+stages:
+  - stage: validate
+    jobs:
+    - job: validate
+      continueOnError: false
+      steps:
+      Settings
+      - task: TerraformInstaller@0
+        inputs:
+          terraformVersion: '0.13.7'
